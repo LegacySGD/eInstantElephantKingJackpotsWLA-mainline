@@ -1,0 +1,17 @@
+<FilterMapping>
+	<Input>
+		<Filter type="ActionInput"/>
+		<Filter type="WagerInput"/>
+		<Filter type="JSONInput"/>
+	</Input>
+	<Outcome>
+		<Filter type="OutcomeDetail" className="com.igt.rgs.gle.filtering.outcome.OutcomeDetailFilter">
+			<Reference type="LoopOutcome" name=""/>
+		</Filter>
+		<Filter type="TransactionOutcome"/>
+		<Filter type="JackpotOutcome"/>
+		<Filter type="PrizeOutcome"/>		
+		<Filter type="JSONOutcome" name="ODEResponse"/>
+		<Filter type="JSONOutcome" name="ODERevealData"/>
+	</Outcome>
+</FilterMapping>

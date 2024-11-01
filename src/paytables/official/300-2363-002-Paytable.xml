@@ -1,0 +1,392 @@
+<SignedPaytable>
+	<Key>wwpublic1</Key>
+	<Signature>iTGd/sQbT5SqJ7ExuKvISrUIOaAf2xG+zqhqoCZ9mWfEIrtFYsElpeRuoQXMMu0zNwqr5d3ki+zCCXopqXZWAukJWNve7PvzFLF4gWj//ZLF1kcIYnVl2R5Iu9s6b2NX8NpKlp4zIFWqyZEB+WwOJKMk8Tky+ZX0AIyIIPVA8GM=</Signature>
+	<Digest>oG8FE/GiGkolEVilRkkI4UPih+E=</Digest>
+	<DigestedData>
+		<Paytable>
+			<PaytableData crc="">
+				<PaytableVariation name="Variation">
+					<Variation>
+						<SoftwareId>300-2363-002</SoftwareId>
+						<PaytableStatistics description="Elephant King Jackpots WLA" maxRTP="85.00" minRTP="85.00" name="Elephant King Jackpots MLP WLA" type="Lottery"/>
+						<BetConfiguration name="ODEWager">
+							<PlayedCreditsPerSelection>1</PlayedCreditsPerSelection>
+							<PaidCreditsPerSelection>1</PaidCreditsPerSelection>
+						</BetConfiguration>
+						<ExecutionModelMapping>
+							<ExecutionModel name="Wager_Buy">
+								<Data name="Wager_Buy.ODEInputVerifier.Wager" type="Wager_Buy.ODEInputVerifier.Wager"/>
+								<Data name="Wager_Buy.ODEInputVerifier.JSON" type="Wager_Buy.ODEInputVerifier.JSON"/>
+								<Data name="Wager_Buy.StaticTriggerProcessor" type="Wager_Buy.StaticTriggerProcessor"/>
+								<Data name="Wager_Buy.StaticTriggerProcessor.WagerMode" type="Wager_Buy.StaticTriggerProcessor.WagerMode"/>
+								<Data name="Wager_Buy.LoopProcessor" type="Wager_Buy.LoopProcessor"/>
+								<Data name="Wager_Buy.StageProcessor" type="Wager_Buy.StageProcessor"/>
+								<Data name="Wager_Buy.AdvancedTransactionProcessor" type="Wager_Buy.AdvancedTransactionProcessor"/>
+							</ExecutionModel>
+							<ExecutionModel name="Wager_Try">
+								<Data name="Wager_Try.ODEInputVerifier.Wager" type="Wager_Try.ODEInputVerifier.Wager"/>
+								<Data name="Wager_Try.ODEInputVerifier.JSON" type="Wager_Try.ODEInputVerifier.JSON"/>
+								<Data name="Wager_Try.OutcomeDeepCopyProcessor.ODEOutcome" type="Wager_Try.OutcomeDeepCopyProcessor.ODEOutcome"/>
+								<Data name="Wager_Try.ODEPrizeProcessor" type="Wager_Try.ODEPrizeProcessor"/>
+								<Data name="Wager_Try.ODENonCashPrizeProcessor" type="Wager_Try.ODENonCashPrizeProcessor"/>
+								<Data name="Wager_Try.LoopProcessor" type="Wager_Try.LoopProcessor"/>
+								<Data name="Wager_Try.StaticTriggerProcessor" type="Wager_Try.StaticTriggerProcessor"/>
+								<Data name="Wager_Try.StaticTriggerProcessor.WagerMode" type="Wager_Try.StaticTriggerProcessor.WagerMode"/>
+								<Data name="Wager_Try.StageProcessor" type="Wager_Try.StageProcessor"/>
+								<Data name="Wager_Try.AdvancedTransactionProcessor" type="Wager_Try.AdvancedTransactionProcessor"/>
+							</ExecutionModel>
+							<ExecutionModel name="Scenario">
+								<Data name="Scenario.OutcomeDeepCopyProcessor.ODEOutcome" type="Scenario.OutcomeDeepCopyProcessor.ODEOutcome"/>
+								<Data name="Scenario.JackpotPrizeProcessor" type="Scenario.JackpotPrizeProcessor"/>
+								<Data name="JackpotTriggerProcessor" type="JackpotTriggerProcessor"/>
+								<Data name="Scenario.ODEPrizeProcessor" type="Scenario.ODEPrizeProcessor"/>
+								<Data name="Scenario.LoopProcessor" type="Scenario.LoopProcessor"/>
+								<Data name="Scenario.StageProcessor" type="Scenario.StageProcessor"/>
+								<Data name="Scenario.AdvancedTransactionProcessor" type="Scenario.AdvancedTransactionProcessor"/>
+							</ExecutionModel>
+							<ExecutionModel name="ScenarioLoop">
+								<Data name="Loop.End" type="ResolveLoop"/>
+								<Data name="JackpotPrize.StageProcessor" type="JackpotPrize.StageProcessor"/>
+								<Data name="JackpotPrize.AdvancedTransactionProcessor" type="JackpotPrize.AdvancedTransactionProcessor"/>
+							</ExecutionModel>
+							<ExecutionModel name="Reveal">
+								<Data name="Reveal.ODEInputVerifier" type="Reveal.ODEInputVerifier"/>
+								<Data name="Reveal.ODEInputVerifier.RevealData" type="Reveal.ODEInputVerifier.RevealData"/>
+								<Data name="Reveal.StageProcessor" type="Reveal.StageProcessor"/>
+								<Data name="Reveal.AdvancedTransactionProcessor" type="Reveal.AdvancedTransactionProcessor"/>
+							</ExecutionModel>
+						</ExecutionModelMapping>
+					</Variation>
+				</PaytableVariation>
+			</PaytableData>
+			<PaytableData crc="">
+				<ComponentsDataMapping>
+					<ComponentData name="Wager_Buy.ODEInputVerifier.Wager">
+						<Data name="Wager_Buy.Wager" type="ODEInfo"/>
+					</ComponentData>
+					<ComponentData name="Wager_Buy.ODEInputVerifier.JSON">
+						<Data name="Wager_Buy.JSON" type="ODEInfo"/>
+					</ComponentData>
+					<ComponentData name="Wager_Buy.StaticTriggerProcessor">
+						<Data name="Wager_Buy.StaticTriggers" type="TriggerInfo"/>
+					</ComponentData>
+					<ComponentData name="Wager_Buy.StaticTriggerProcessor.WagerMode">
+						<Data name="Wager_Buy.WagerMode" type="TriggerInfo"/>
+					</ComponentData>
+					<ComponentData name="Wager_Buy.LoopProcessor">
+						<Data name="Wager_Buy.Loop" type="TriggerInfo"/>
+					</ComponentData>
+					<ComponentData name="Wager_Buy.StageProcessor">
+						<Data name="Wager_Buy" type="StageTriggerInfo"/>
+					</ComponentData>
+					<ComponentData name="Wager_Buy.AdvancedTransactionProcessor">
+						<Data name="Wager_Buy" type="WagerStrategyInfo"/>
+					</ComponentData>
+					<ComponentData name="Wager_Try.ODEInputVerifier.Wager">
+						<Data name="Wager_Try.Wager" type="ODEInfo"/>
+					</ComponentData>
+					<ComponentData name="Wager_Try.ODEInputVerifier.JSON">
+						<Data name="Wager_Try.JSON" type="ODEInfo"/>
+					</ComponentData>
+					<ComponentData name="Wager_Try.OutcomeDeepCopyProcessor.ODEOutcome">
+						<Data name="Wager_Try" type="DeepCopyInfo"/>
+					</ComponentData>
+					<ComponentData name="Wager_Try.ODEPrizeProcessor">
+						<Data name="ODE" type="PrizeInfo"/>
+						<Data name="ODE" type="TriggerInfo"/>
+					</ComponentData>
+					<ComponentData name="Wager_Try.ODENonCashPrizeProcessor">
+						<Data name="JackpotPrizes" type="InstantWinNonCashPrizeInfo"/>
+					</ComponentData>
+					<ComponentData name="Wager_Try.LoopProcessor">
+						<Data name="Wager_Try.Loop" type="TriggerInfo"/>
+					</ComponentData>
+					<ComponentData name="Wager_Try.StaticTriggerProcessor">
+						<Data name="Wager_Try.StaticTriggers" type="TriggerInfo"/>
+					</ComponentData>
+					<ComponentData name="Wager_Try.StaticTriggerProcessor.WagerMode">
+						<Data name="Wager_Try.WagerMode" type="TriggerInfo"/>
+					</ComponentData>
+					<ComponentData name="Wager_Try.StageProcessor">
+						<Data name="Wager_Try" type="StageTriggerInfo"/>
+					</ComponentData>
+					<ComponentData name="Wager_Try.AdvancedTransactionProcessor">
+						<Data name="Wager_Try" type="WagerStrategyInfo"/>
+					</ComponentData>
+					<ComponentData name="Scenario.OutcomeDeepCopyProcessor.ODEOutcome">
+						<Data name="Scenario" type="DeepCopyInfo"/>
+					</ComponentData>
+					<ComponentData name="Scenario.ODEPrizeProcessor">
+						<Data name="ODE" type="PrizeInfo"/>
+						<Data name="ODE" type="TriggerInfo"/>
+					</ComponentData>
+					<ComponentData name="Scenario.LoopProcessor">
+						<Data name="Scenario.Loop" type="TriggerInfo"/>
+						<Data name="Scenario.Loop" type="LoopInfo"/>
+					</ComponentData>
+					<ComponentData name="Scenario.StageProcessor">
+						<Data name="Scenario" type="StageTriggerInfo"/>
+					</ComponentData>
+					<ComponentData name="Scenario.AdvancedTransactionProcessor">
+						<Data name="Scenario" type="WagerStrategyInfo"/>
+					</ComponentData>
+					<ComponentData name="Scenario.JackpotPrizeProcessor">
+						<Data name="MultiPricePoint" type="InstantWinJackpotInfo"/>
+					</ComponentData>
+					<ComponentData name="Loop.End">
+						<Data name="EndLoop" type="TriggerInfo"/>
+					</ComponentData>
+					<ComponentData name="JackpotPrize.StageProcessor">
+						<Data name="JackpotPrize" type="StageTriggerInfo"/>
+					</ComponentData>
+					<ComponentData name="JackpotPrize.AdvancedTransactionProcessor">
+						<Data name="JackpotPrize" type="WagerStrategyInfo"/>
+					</ComponentData>
+					<ComponentData name="Reveal.ODEInputVerifier">
+						<Data name="Reveal.Status" type="ODEInfo"/>
+					</ComponentData>
+					<ComponentData name="Reveal.ODEInputVerifier.RevealData">
+						<Data name="Reveal.RevealData" type="ODEInfo"/>
+					</ComponentData>
+					<ComponentData name="Reveal.StageProcessor">
+						<Data name="Reveal" type="StageTriggerInfo"/>
+					</ComponentData>
+					<ComponentData name="Reveal.AdvancedTransactionProcessor">
+						<Data name="Reveal" type="WagerStrategyInfo"/>
+					</ComponentData>
+				</ComponentsDataMapping>
+			</PaytableData>
+			<PaytableData crc="">
+				<ODEInfo name="Wager_Buy.Wager" verificationStrategy="wager">
+					<Wagers>
+						<Wager name="Wager1"/>
+					</Wagers>
+				</ODEInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<ODEInfo name="Wager_Buy.JSON" verificationStrategy="json"/>
+			</PaytableData>
+			<PaytableData crc="">
+				<TriggerInfo name="Wager_Buy.StaticTriggers">
+					<Trigger name="wager"/>
+				</TriggerInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<TriggerInfo name="Wager_Buy.WagerMode">
+					<Trigger name="buy"/>
+				</TriggerInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<TriggerInfo name="Wager_Buy.Loop">
+					<Trigger name="wager"/>
+				</TriggerInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<StageTriggerInfo name="Wager_Buy">
+					<Trigger name="wager" stageConnector="WagerToScenario"/>
+				</StageTriggerInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<WagerStrategyInfo name="Wager_Buy">
+					<Trigger name="wager" payoutState="noPayout" priority="0" wagerState="pending"/>
+				</WagerStrategyInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<ODEInfo name="Wager_Try.Wager" verificationStrategy="wager">
+					<Wagers>
+						<Wager name="Wager1"/>
+					</Wagers>
+				</ODEInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<ODEInfo name="Wager_Try.JSON" verificationStrategy="json"/>
+			</PaytableData>
+			<PaytableData crc="">
+				<DeepCopyInfo name="Wager_Try">
+					<DeepCopy destinationName="ODEResponse" sourceName="ODEResponse.Encrypted" type="JSONOutcome"/>
+				</DeepCopyInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<TriggerInfo name="Wager_Try.Loop">
+					<Trigger name="Jackpot"/>
+				</TriggerInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<TriggerInfo name="Wager_Try.StaticTriggers">
+					<Trigger name="wager"/>
+				</TriggerInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<TriggerInfo name="Wager_Try.WagerMode">
+					<Trigger name="try"/>
+				</TriggerInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<StageTriggerInfo name="Wager_Try">
+					<Trigger name="wager" stageConnector="WagerToWager"/>
+				</StageTriggerInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<WagerStrategyInfo name="Wager_Try">
+					<Trigger name="Jackpot" payoutState="noPayout" priority="10" wagerState="pending"/>
+					<Trigger name="wager" payoutState="payout" priority="0" wagerState="settled"/>
+				</WagerStrategyInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<DeepCopyInfo name="Scenario">
+					<DeepCopy destinationName="ODEResponse" sourceName="ODEResponse.Encrypted" type="JSONOutcome"/>
+				</DeepCopyInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<InstantWinNonCashPrizeInfo name="JackpotPrizes" nonCashPrizeAwardedTrigger="Jackpot">
+					<PricePoint amount="50">
+						<Prize division="1" name="Jackpot1" tier="1"/>
+						<Prize division="2" name="Jackpot2" tier="2"/>
+						<Prize division="3" name="Jackpot3" tier="7"/>
+					</PricePoint>
+					<PricePoint amount="100">
+						<Prize division="1" name="Jackpot1" tier="1"/>
+						<Prize division="2" name="Jackpot2" tier="2"/>
+						<Prize division="3" name="Jackpot3" tier="9"/>
+					</PricePoint>
+					<PricePoint amount="200">
+						<Prize division="1" name="Jackpot1" tier="1"/>
+						<Prize division="2" name="Jackpot2" tier="4"/>
+						<Prize division="3" name="Jackpot3" tier="13"/>
+					</PricePoint>
+					<PricePoint amount="300">
+						<Prize division="1" name="Jackpot1" tier="1"/>
+						<Prize division="2" name="Jackpot2" tier="6"/>
+						<Prize division="3" name="Jackpot3" tier="15"/>
+					</PricePoint>
+					<PricePoint amount="500">
+						<Prize division="1" name="Jackpot1" tier="1"/>
+						<Prize division="2" name="Jackpot2" tier="6"/>
+						<Prize division="3" name="Jackpot3" tier="17"/>
+					</PricePoint>
+					<PricePoint amount="1000">
+						<Prize division="1" name="Jackpot1" tier="1"/>
+						<Prize division="2" name="Jackpot2" tier="8"/>
+						<Prize division="3" name="Jackpot3" tier="27"/>
+					</PricePoint>
+					<PricePoint amount="2000">
+						<Prize division="1" name="Jackpot1" tier="1"/>
+						<Prize division="2" name="Jackpot2" tier="12"/>
+						<Prize division="3" name="Jackpot3" tier="41"/>
+					</PricePoint>
+				</InstantWinNonCashPrizeInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<PrizeInfo multiplierStrategy="null" name="ODE" strategy="preventPrize">
+					<Prize name="Total">
+						<PrizePay count="3" value="0"/>
+					</Prize>
+				</PrizeInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<TriggerInfo name="ODE">
+					<Trigger name="Jackpot"/>
+				</TriggerInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<TriggerInfo name="Scenario.Loop">
+					<Trigger name="Jackpot1"/>
+					<Trigger name="Jackpot2"/>
+					<Trigger name="Jackpot3"/>
+				</TriggerInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<LoopInfo name="Scenario.Loop" triggerStage="Scenario"/>
+			</PaytableData>
+			<PaytableData crc="">
+				<StageTriggerInfo name="Scenario">
+					<Trigger name="Jackpot1" stageConnector="ScenarioToJackpotPrize"/>
+					<Trigger name="Jackpot2" stageConnector="ScenarioToJackpotPrize"/>
+					<Trigger name="Jackpot3" stageConnector="ScenarioToJackpotPrize"/>
+				</StageTriggerInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<WagerStrategyInfo name="Scenario">
+					<Trigger name="scenario" payoutState="noPayout" priority="0" wagerState="pending"/>
+				</WagerStrategyInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<InstantWinJackpotInfo name="MultiPricePoint" strategy="multi">
+					<PricePoint amount="50">
+						<Jackpot division="1" level="1" name="Jackpot1"/>
+						<Jackpot division="2" level="2" name="Jackpot2"/>
+						<Jackpot division="7" level="3" name="Jackpot3"/>
+					</PricePoint>
+					<PricePoint amount="100">
+						<Jackpot division="1" level="1" name="Jackpot1"/>
+						<Jackpot division="2" level="2" name="Jackpot2"/>
+						<Jackpot division="9" level="3" name="Jackpot3"/>
+					</PricePoint>
+					<PricePoint amount="200">
+						<Jackpot division="1" level="1" name="Jackpot1"/>
+						<Jackpot division="4" level="2" name="Jackpot2"/>
+						<Jackpot division="13" level="3" name="Jackpot3"/>
+					</PricePoint>
+					<PricePoint amount="300">
+						<Jackpot division="1" level="1" name="Jackpot1"/>
+						<Jackpot division="6" level="2" name="Jackpot2"/>
+						<Jackpot division="15" level="3" name="Jackpot3"/>
+					</PricePoint>
+					<PricePoint amount="500">
+						<Jackpot division="1" level="1" name="Jackpot1"/>
+						<Jackpot division="6" level="2" name="Jackpot2"/>
+						<Jackpot division="17" level="3" name="Jackpot3"/>
+					</PricePoint>
+					<PricePoint amount="1000">
+						<Jackpot division="1" level="1" name="Jackpot1"/>
+						<Jackpot division="8" level="2" name="Jackpot2"/>
+						<Jackpot division="27" level="3" name="Jackpot3"/>
+					</PricePoint>
+					<PricePoint amount="2000">
+						<Jackpot division="1" level="1" name="Jackpot1"/>
+						<Jackpot division="12" level="2" name="Jackpot2"/>
+						<Jackpot division="41" level="3" name="Jackpot3"/>
+					</PricePoint>
+				</InstantWinJackpotInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<TriggerInfo name="EndLoop">
+					<Trigger name="getOutOfLoop"/>
+				</TriggerInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<StageTriggerInfo name="JackpotPrize">
+					<Trigger name="try" stageConnector="JackpotPrizeToWager"/>
+					<Trigger name="buy" stageConnector="JackpotPrizeToReveal"/>
+				</StageTriggerInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<WagerStrategyInfo name="JackpotPrize">
+					<Trigger name="try" payoutState="payout" priority="10" wagerState="settled"/>
+					<Trigger name="buy" payoutState="noPayout" priority="0" wagerState="pending"/>
+				</WagerStrategyInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<ODEInfo name="Reveal.Status" verificationStrategy="revealStatus">
+					<RevealIncompleteTrigger>incomplete</RevealIncompleteTrigger>
+					<RevealCompleteTrigger>complete</RevealCompleteTrigger>
+				</ODEInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<ODEInfo name="Reveal.RevealData" verificationStrategy="revealData"/>
+			</PaytableData>
+			<PaytableData crc="">
+				<StageTriggerInfo name="Reveal">
+					<Trigger name="incomplete" stageConnector="RevealToReveal"/>
+					<Trigger name="complete" stageConnector="RevealToWager"/>
+				</StageTriggerInfo>
+			</PaytableData>
+			<PaytableData crc="">
+				<WagerStrategyInfo name="Reveal">
+					<Trigger name="incomplete" payoutState="noPayout" priority="50" wagerState="pending"/>
+					<Trigger name="complete" payoutState="payout" priority="0" wagerState="settled"/>
+				</WagerStrategyInfo>
+			</PaytableData>
+		</Paytable>
+	</DigestedData>
+</SignedPaytable>
